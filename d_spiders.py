@@ -85,7 +85,7 @@ class ZBox(Spider):
         if self.phase == 0:
             phase = np.ones(d)
         else:
-            assert len(self.phase) == d and self.phase[0] == 1, "bad phase"
+            assert len(self.phase) == d and self.phase[0] == 1, "phases should be length d with first parameter 1"
             phase = self.phase
             
         n, m = len(self.dom), len(self.cod)
